@@ -1,4 +1,4 @@
-# cc-lab-01
+# sadc-lab
 
 DataSet-ul a fost luat de pe [Kaggle](https://www.kaggle.com/datasets/syedmubarak/netflix-dataset-latest-2021/) iar acesta contine o lista cu filme si detalii despre acestea, precum si rating-ul acestora pe diferite platforme.
 
