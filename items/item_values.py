@@ -1,4 +1,3 @@
-
 from recombee_api_client.api_client import RecombeeClient, Region
 from recombee_api_client.api_requests import *
 import json
@@ -12,7 +11,7 @@ client = RecombeeClient(
 # Set item values
 requests = []
 
-with open('movies.json') as f:
+with open('../resources/movies.json') as f:
     data = json.loads(f.read())
     for item_id, values in data.items():
         r = SetItemValues(item_id,

@@ -1,6 +1,5 @@
 from recombee_api_client.api_client import RecombeeClient, Region
 from recombee_api_client.api_requests import *
-import json
 
 client = RecombeeClient(
   'lab01-movies',

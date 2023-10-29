@@ -41,5 +41,5 @@ for record in data.to_dict(orient='records'):
     data_dict[record_uuid] = record
 
 # Write the JSON data to a .json file
-with open('movies.json', 'w') as json_file:
+with open('../resources/movies.json', 'w') as json_file:
     json.dump(data_dict, json_file, indent=4, default=str)  # Use default=str to handle datetime serialization
