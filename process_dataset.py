@@ -23,7 +23,7 @@ data.columns = ['title', 'genre', 'view_rating', 'imdb_score', 'rotten_tomatoes_
 
 # Convert columns to appropriate data types
 data['genre'] = data['genre'].apply(lambda x: [item.strip() for item in x.split(',')] if isinstance(x, str) else [])
-data['view_rating'] = pd.to_numeric(data['view_rating'], errors='coerce').fillna(0)
+data['view_rating'] = data['view_rating'].apply(lambda x: [item.strip() for item in x.split(',')] if isinstance(x, str) else [])
 data['imdb_score'] = pd.to_numeric(data['imdb_score'], errors='coerce').fillna(0)
 data['rotten_tomatoes_score'] = pd.to_numeric(data['rotten_tomatoes_score'], errors='coerce').fillna(0)
 data['metacritic_score'] = pd.to_numeric(data['metacritic_score'], errors='coerce').fillna(0)

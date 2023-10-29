@@ -1,6 +1,5 @@
 from recombee_api_client.api_client import RecombeeClient, Region
 from recombee_api_client.api_requests import *
-import json
 
 client = RecombeeClient(
   'lab01-movies',
@@ -10,7 +9,7 @@ client = RecombeeClient(
 # Define item properties
 client.send(AddItemProperty('title', 'string'))
 client.send(AddItemProperty('genre', 'set'))
-client.send(AddItemProperty('view_rating', 'double'))
+client.send(AddItemProperty('view_rating', 'set'))
 client.send(AddItemProperty('imdb_score', 'double'))
 client.send(AddItemProperty('rotten_tomatoes_score', 'double'))
 client.send(AddItemProperty('metacritic_score', 'double'))
